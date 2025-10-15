@@ -54,8 +54,10 @@ export const configureAssistant = (voice: string, style: string) => {
         },
       ],
     },
-    clientMessages: [],
-    serverMessages: [],
+  // empty arrays default to `never[]` which can break strict type inference.
+  // Cast them to the correct CreateAssistantDTO types so callers can push values.
+  clientMessages: [] as unknown as CreateAssistantDTO['clientMessages'],
+  serverMessages: [] as unknown as CreateAssistantDTO['serverMessages'],
   };
   return vapiAssistant;
 };
