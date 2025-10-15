@@ -68,7 +68,7 @@ const CompanionComponent = ({ companionId, subject, topic, name, userName, userI
             vapi.off('speech-start', onSpeechStart);
             vapi.off('speech-end', onSpeechEnd);
         }
-    }, []);
+    }, [companionId]);
 
     const toggleMicrophone = () => {
         const isMuted = vapi.isMuted();
@@ -85,8 +85,8 @@ const CompanionComponent = ({ companionId, subject, topic, name, userName, userI
             serverMessages: [],
         }
 
-        // @ts-expect-error
-        vapi.start(configureAssistant(voice, style), assistantOverrides)
+    // @ts-expect-error vapi.start has a broader runtime signature than the typed helper here
+    vapi.start(configureAssistant(voice, style), assistantOverrides)
     }
 
     const handleDisconnect = () => {
