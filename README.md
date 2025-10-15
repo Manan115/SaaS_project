@@ -4,6 +4,9 @@ This repository contains a Next.js + TypeScript SaaS starter focused around "Com
 
 This README summarizes how to get the project running locally, the important environment variables (from `.env.local`), and a few troubleshooting tips for issues you may encounter during local development (common problems we've seen: malformed VAPI token, duplicate audio SDK/Krisp warnings, and stale dev artifacts after renaming routes).
 
+## Preview 
+Vercel Deployment : https://saa-s-project-kappa.vercel.app/
+
 ## Quick start (Windows / PowerShell)
 
 1. Install dependencies
