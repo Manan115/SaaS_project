@@ -39,7 +39,7 @@ NEXT_PUBLIC_VAPI_WEB_TOKEN=<your-vapi-web-token>
 Important: ensure tokens do not include stray quotes or newlines. For example, the VAPI token line must look like:
 
 ```
-NEXT_PUBLIC_VAPI_WEB_TOKEN=ec8695f3-96f2-4812-abcf-29a638567a8b
+NEXT_PUBLIC_VAPI_WEB_TOKEN=xxxx-xxxx-xxxx-xxxx-xxxx
 ```
 
 3. Run the dev server
